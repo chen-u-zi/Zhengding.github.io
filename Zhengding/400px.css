@@ -1,0 +1,98 @@
+/* 針對 400px 的媒體查詢 */
+@media (max-width: 400px) {
+    section .container {
+        width: 100%;
+        /* 可以根據需要設定寬度 */
+    }
+
+    .hero {
+        min-width: 400px;
+        height: 700px;
+    }
+
+    .hero .right {
+        margin-top: 20px;
+        max-height: 700px;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .hero .filled-btn {
+        margin-top: 20px;
+        width: 100%;
+        /* 讓按鈕佔滿寬度 */
+    }
+
+    .hero .left {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+        /* 調整標題大小 */
+        color: yellow;
+    }
+
+    .hero p {
+        font-size: 1rem;
+        /* 調整段落字型大小 */
+        max-width: 280px;
+        /* 可以設置最大寬度 */
+    }
+
+    .work .cards {
+        grid-template-columns: 1fr;
+        /* 讓每個卡片佔滿整行 */
+    }
+
+    .work .card {
+        padding: 20px;
+        /* 調整卡片內距 */
+    }
+
+    .about-us .container,
+    .experience .container {
+        flex-direction: column;
+        text-align: center;
+        /* 垂直排列並居中對齊 */
+    }
+
+    .submit .container {
+        flex-direction: column;
+        /* 表單內容垂直排列 */
+    }
+
+    .submit .input {
+        padding: 12px;
+        /* 增加輸入框內距 */
+    }
+
+
+
+    .services .cards {
+        grid-template-columns: 1fr;
+        /* 讓服務卡片垂直排列 */
+    }
+
+    .services .card {
+        padding: 15px 20px;
+        /* 調整服務卡片內距 */
+    }
+
+    .nvabar .link {
+        display: none;
+        /* 隱藏導航欄中的鏈接 */
+    }
+
+    .nvabar .menu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.5rem;
+        /* 調整漢堡菜單字型大小 */
+    }
+
+    .nvabar .menu:hover {
+        color: var(--primary-color);
+    }
+}
